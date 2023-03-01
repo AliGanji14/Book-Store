@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     "crispy_bootstrap5",
     # local
     "accounts.apps.AccountsConfig",
-    "pages.apps.PagesConfig"
+    "pages.apps.PagesConfig",
+    "books.apps.BooksConfig",
 ]
 
 MIDDLEWARE = [
@@ -130,4 +131,3 @@ LOGOUT_REDIRECT_URL = "home"
 CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
-
