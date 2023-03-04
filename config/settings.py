@@ -121,14 +121,22 @@ USE_TZ = True
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
+# authentication settings
 AUTH_USER_MODEL = "accounts.CustomUser"
-
 LOGIN_REDIRECT_URL = "home"
 LOGOUT_REDIRECT_URL = "home"
 
+# crispy forms  settings
 CRISPY_TEMPLATE_PACK = "bootstrap5"
 
+# Email config
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
+# static files config
 STATIC_URL = "/static/"
 STATICFILES_DIRS = [BASE_DIR / "static"]
+
+# media files
+MEDIA_URL = "/media/"
+MEDIA_ROOT = BASE_DIR / "media"
+
