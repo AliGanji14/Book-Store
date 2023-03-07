@@ -5,7 +5,7 @@ from .models import Book, Comment
 
 @admin.register(Book)
 class AdminBook(admin.ModelAdmin):
-    list_display = ("title", "author", "price",)
+    list_display = ("user","title", "author", "price",)
 
 
 @admin.register(Comment)
