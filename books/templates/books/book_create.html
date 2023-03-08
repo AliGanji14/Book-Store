@@ -13,14 +13,13 @@
                     <div class="px-5 pt-3 pb-5">
                         <form method="POST" enctype="multipart/form-data">
                             {% csrf_token %}
-                            {{ form|crispy }}
+                            {{ form_book|crispy }}
                             <button type="submit" class="btn btn-success mt-2">ذخیره</button>
                         </form>
                     </div>
                 </div>
             </div>
             <div class="col-3">
-
                 <div class="card my-3 shadow">
                     <h5 class="card-header bg-warning text-light">راهنما</h5>
                     <div class="card-body">
